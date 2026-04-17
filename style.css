@@ -1,81 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
 }
 
-header {
-    background: #0077b6;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.header {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-nav {
-    background: #023e8a;
+.header h1 {
+  font-size: 2.5rem;
 }
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #023e8a;
+  padding: 15px;
 }
 
-nav ul li {
-    margin: 10px;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+.navbar a:hover {
+  color: #90e0ef;
 }
 
 .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background: #caf0f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: auto;
 }
 
 .hero h2 {
-    margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 .countries {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px;
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.2s;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  background: #caf0f8;
+}
+
+.about h2 {
+  margin-bottom: 10px;
 }
 
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #0077b6;
-    color: white;
-    margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background: #0077b6;
+  color: white;
 }
