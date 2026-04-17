@@ -322,16 +322,77 @@ footer {
   backdrop-filter: blur(6px);
 }
 
+/* =========================
+   AUSTRALIA BACKGROUND
+   ========================= */
+
 .australia {
-  background: url("https://images.unsplash.com/photo-1506973035872-a4f23f8c3d66?auto=format&fit=crop&w=2000&q=80")
-  no-repeat center center fixed;
+  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80")
+    no-repeat center center fixed;
   background-size: cover;
 }
 
+/* dark cinematic overlay */
 .australia::before {
   content: "";
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.55);
   z-index: -1;
+}
+
+/* =========================
+   AUSTRALIA HEADER
+   (warm sunset / outback vibe)
+   ========================= */
+
+.australia .header {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 102, 0, 0.85),
+    rgba(17, 24, 39, 0.85)
+  );
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   AUSTRALIA NAV
+   ========================= */
+
+.australia .navbar {
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   AUSTRALIA CARDS
+   ========================= */
+
+.australia .card {
+  background: rgba(17, 24, 39, 0.92);
+  border: 1px solid rgba(255, 102, 0, 0.25);
+  color: #e6e6e6;
+  backdrop-filter: blur(6px);
+}
+
+.australia .card:hover {
+  border-color: #ff7a18;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   AUSTRALIA DIARY
+   ========================= */
+
+.australia .diary {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(17, 24, 39, 0.92);
+  color: #e6e6e6;
+  border-radius: 15px;
+  line-height: 1.8;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-left: 6px solid #ff7a18;
+  backdrop-filter: blur(6px);
 }
