@@ -214,3 +214,10 @@ footer {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.4);
 }
+
+.card h3 img {
+  width: 24px;
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
