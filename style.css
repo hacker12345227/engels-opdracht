@@ -247,3 +247,77 @@ footer {
   border-left: 6px solid #ef4444;
   backdrop-filter: blur(6px);
 }
+
+/* =========================
+   THAILAND BACKGROUND
+   ========================= */
+
+.thailand {
+  background: url("https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=2000&q=80")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* dark tropical overlay */
+.thailand::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.55);
+  z-index: -1;
+}
+
+/* =========================
+   THAILAND HEADER (GOLD STYLE)
+   ========================= */
+
+.thailand .header {
+  background: rgba(212, 175, 55, 0.85); /* gold */
+  color: #111;
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   THAILAND NAV (DARK GOLD TOUCH)
+   ========================= */
+
+.thailand .navbar {
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   THAILAND CARDS (TROPICAL GLASS)
+   ========================= */
+
+.thailand .card {
+  background: rgba(17, 24, 39, 0.90);
+  color: #e6e6e6;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.thailand .card:hover {
+  border-color: #fbbf24;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   THAILAND DIARY (SAME STYLE BUT GOLD ACCENT)
+   ========================= */
+
+.thailand .diary {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(17, 24, 39, 0.92);
+  color: #e6e6e6;
+  border-radius: 15px;
+  line-height: 1.8;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-left: 6px solid #d4af37;
+  backdrop-filter: blur(6px);
+}
