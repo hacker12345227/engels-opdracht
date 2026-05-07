@@ -259,12 +259,15 @@ body {
    FLAGS
    ========================= */
 
-.flag {
-  width: 52px;
+/* Works whether img has class="flag" or not */
+.flag,
+.header img {
+  width: 56px;
   height: auto;
   border-radius: var(--radius-sm);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.6);
   display: block;
+  margin: 0 auto 16px;
 }
 
 /* =========================
