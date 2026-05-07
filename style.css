@@ -621,3 +621,78 @@ footer {
   border-left: 6px solid #60a5fa;
   backdrop-filter: blur(6px);
 }
+
+/* =========================
+   SOUTH AFRICA BACKGROUND
+   ========================= */
+
+.southafrica {
+  background: url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2000&q=80")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* cinematic safari overlay */
+.southafrica::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+
+/* =========================
+   SOUTH AFRICA HEADER
+   (sunset safari vibe)
+   ========================= */
+
+.southafrica .header {
+  background: linear-gradient(
+    135deg,
+    rgba(234, 88, 12, 0.85),
+    rgba(17, 24, 39, 0.88)
+  );
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   SOUTH AFRICA NAV
+   ========================= */
+
+.southafrica .navbar {
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+/* =========================
+   SOUTH AFRICA CARDS
+   ========================= */
+
+.southafrica .card {
+  background: rgba(17, 24, 39, 0.92);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  color: #e6e6e6;
+  backdrop-filter: blur(6px);
+}
+
+.southafrica .card:hover {
+  border-color: #f97316;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   SOUTH AFRICA DIARY
+   ========================= */
+
+.southafrica .diary {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(17, 24, 39, 0.92);
+  color: #e6e6e6;
+  border-radius: 15px;
+  line-height: 1.8;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-left: 6px solid #f97316;
+  backdrop-filter: blur(6px);
+}
